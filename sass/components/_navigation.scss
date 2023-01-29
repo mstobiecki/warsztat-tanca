@@ -1,0 +1,9 @@
+.navigation {
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		max-width: 120rem;
+		margin: 0 auto;
+	}
+}
