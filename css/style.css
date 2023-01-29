@@ -10,8 +10,9 @@ html {
 
 body {
   font-family: 'Rubik', sans-serif;
-  background-color: #171717;
-  line-height: 1; }
+  line-height: 1;
+  color: #fff;
+  background-color: #171717; }
 
 .navigation {
   background-color: #171717; }
@@ -20,7 +21,7 @@ body {
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-    padding: 1rem 2rem;
+    padding: 1rem;
     max-width: 130rem; }
   .navigation__list {
     display: flex;
@@ -36,4 +37,37 @@ body {
     letter-spacing: 3px;
     transition: color 0.2s; }
   .navigation__link:hover, .navigation__link:active {
+    color: #cccccc; }
+
+.header {
+  position: relative;
+  background-image: url("./../img/hero.webp");
+  background-size: cover;
+  height: 85vh; }
+  .header__container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 130rem;
+    transform: translate(-50%, -50%); }
+  .header__text {
+    width: 40%;
+    text-align: left; }
+  .header__heading {
+    font-size: 6.2rem;
+    line-height: 1.2;
+    letter-spacing: 3px;
+    font-weight: 400;
+    text-transform: uppercase; }
+  .header__special {
+    color: #ffe066; }
+  .header__link:link, .header__link:visited {
+    display: inline-block;
+    margin-top: 4rem;
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: currentColor;
+    text-transform: uppercase;
+    transition: color 0.2s; }
+  .header__link:hover, .header__link:active {
     color: #cccccc; }

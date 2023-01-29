@@ -1,0 +1,41 @@
+.header {
+	position: relative;
+	background-image: url('./../img/hero.webp');
+	background-size: cover;
+	height: 85vh;
+	&__container {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 130rem;
+		transform: translate(-50%, -50%);
+	}
+	&__text {
+		width: 40%;
+		text-align: left;
+	}
+	&__heading {
+		font-size: 6.2rem;
+		line-height: 1.2;
+		letter-spacing: 3px;
+		font-weight: 400;
+		text-transform: uppercase;
+	}
+	&__special {
+		color: #ffe066;
+	}
+	&__link:link,
+	&__link:visited {
+		display: inline-block;
+		margin-top: 4rem;
+		font-size: 1.4rem;
+		text-decoration: none;
+		color: currentColor;
+		text-transform: uppercase;
+		transition: color $animation-time;
+	}
+	&__link:hover,
+	&__link:active {
+		color: $color-darker-white;
+	}
+}
