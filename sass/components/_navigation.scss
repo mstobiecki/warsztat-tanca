@@ -1,7 +1,5 @@
 .navigation {
-	position: fixed;
-	width: 100%;
-	background-color: $background-navigation;
+	background-color: $color-grey-dark;
 	&__container {
 		display: flex;
 		justify-content: space-between;
