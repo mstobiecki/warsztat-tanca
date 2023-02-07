@@ -1,6 +1,10 @@
 .header {
 	position: relative;
-	background-image: url('./../img/hero.webp');
+	background-image: linear-gradient(
+			rgba(33, 33, 33, 0.3),
+			rgba(33, 33, 33, 0.3)
+		),
+		url('./../img/hero.webp');
 	background-size: cover;
 	height: 85vh;
 	&__container {
