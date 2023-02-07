@@ -9,7 +9,7 @@ html {
   font-size: 62.5%; }
 
 body {
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Syne', sans-serif;
   line-height: 1;
   color: #fff;
   background-color: #171717; }
@@ -141,3 +141,30 @@ body {
     letter-spacing: 3px;
     text-transform: uppercase;
     color: #171717; }
+
+.testimonials {
+  background-color: #323232; }
+  .testimonials__image {
+    display: flex;
+    justify-content: center; }
+  .testimonials__box {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .testimonials__char {
+    font-size: 8rem;
+    color: #ffe685; }
+  .testimonials__text {
+    width: 70%;
+    line-height: 1.6;
+    text-align: center;
+    font-size: 2.4rem;
+    letter-spacing: -0.75px; }
+  .testimonials__name {
+    margin-top: 4rem;
+    font-size: 1.6rem;
+    line-height: 1.9;
+    text-transform: uppercase;
+    color: #ffe685; }

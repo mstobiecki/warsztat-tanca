@@ -1,0 +1,32 @@
+.testimonials {
+	background-color: #323232;
+	&__image {
+		display: flex;
+		justify-content: center;
+	}
+	&__box {
+		margin-top: 4rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	&__char {
+		font-size: 8rem;
+		color: $color-yellow;
+	}
+	&__text {
+		width: 70%;
+		line-height: 1.6;
+		text-align: center;
+		font-size: 2.4rem;
+		letter-spacing: -0.75px;
+	}
+	&__name {
+		margin-top: 4rem;
+		font-size: 1.6rem;
+		line-height: 1.9;
+		text-transform: uppercase;
+		color: $color-yellow;
+	}
+}
