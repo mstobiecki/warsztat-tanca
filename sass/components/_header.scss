@@ -27,7 +27,8 @@
 	}
 	&__link:link,
 	&__link:visited {
-		display: inline-block;
+		display: flex;
+		align-items: center;
 		margin-top: 4rem;
 		font-size: 1.4rem;
 		text-decoration: none;
@@ -38,5 +39,8 @@
 	&__link:hover,
 	&__link:active {
 		color: $color-darker-white;
+	}
+	&__icon {
+		margin-left: 0.5rem;
 	}
 }

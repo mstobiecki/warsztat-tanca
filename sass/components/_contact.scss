@@ -2,7 +2,7 @@
 	&__box {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
-		// justify-items: center;
+		justify-items: center;
 		column-gap: 6rem;
 	}
 	&__map {

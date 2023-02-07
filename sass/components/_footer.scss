@@ -1,0 +1,31 @@
+.footer {
+	padding-bottom: 4rem;
+	&__content {
+		display: flex;
+		justify-content: space-between;
+	}
+	.navigation__list--top {
+		align-items: start;
+	}
+	&__info {
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+	}
+	&__description {
+		font-size: 1.4rem;
+		letter-spacing: 1px;
+		font-family: 'DM Sans', sans-serif;
+	}
+	&__line {
+		padding: 4rem 0 4rem 0;
+		border-bottom: 1px solid $color-darker-white;
+	}
+	&__box {
+		margin-top: 5rem;
+		display: flex;
+		justify-content: space-between;
+		font-family: 'DM Sans', sans-serif;
+		font-size: 1.4rem;
+	}
+}
