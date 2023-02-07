@@ -10,8 +10,8 @@
 	&__container {
 		position: absolute;
 		top: 50%;
-		left: 50%;
-		width: 130rem;
+		left: 40%;
+		max-width: 130rem;
 		transform: translate(-50%, -50%);
 	}
 	&__text {
@@ -42,5 +42,25 @@
 	}
 	&__icon {
 		margin-left: 0.5rem;
+	}
+}
+
+// 1400px
+@media (max-width: $smaller-dekstop) {
+	.header {
+		&__heading {
+			font-size: 4.8rem;
+		}
+		&__container {
+			position: absolute;
+			top: 50%;
+			left: 40%;
+
+			transform: translate(-50%, -50%);
+		}
+		&__text {
+			width: 35%;
+			text-align: left;
+		}
 	}
 }

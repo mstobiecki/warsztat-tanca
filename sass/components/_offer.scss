@@ -7,7 +7,7 @@
 	&__container {
 		display: grid;
 		grid-template-columns:
-			repeat(3, 1fr)
+			repeat(2, 1fr)
 			1.5fr 1fr;
 		justify-items: center;
 	}
@@ -29,24 +29,44 @@
 	&__text,
 	&__text--special {
 		position: absolute;
-		top: 25%;
-		left: 15%;
+		top: 50%;
+		left: 50%;
 		z-index: 10;
 		font-size: 10rem;
-		transform: rotate(270deg) translate(-50%, -50%);
+		transform: translate(-50%, -50%) rotate(90deg);
 		opacity: 0.5;
 		text-transform: uppercase;
 	}
 	&__text--special {
-		left: -10%;
+		left: 10%;
 	}
 	&__description {
 		position: absolute;
-		bottom: 10%;
-		left: 25%;
+		bottom: 3%;
+		left: 50%;
+		width: 80%;
+		transform: translate(-50%, -50%);
+		font-weight: 700;
 		font-size: 1.6rem;
 		line-height: 1.6;
 		opacity: 0.8;
 		letter-spacing: 0.5px;
+	}
+}
+
+@media (max-width: 87.5em) {
+	.offer {
+		&__text,
+		&__text--special {
+			font-size: 8rem;
+		}
+		&__text--special {
+			left: 10%;
+		}
+		&__description {
+			bottom: 0%;
+			line-height: 1.4;
+			font-size: 1.5rem;
+		}
 	}
 }
