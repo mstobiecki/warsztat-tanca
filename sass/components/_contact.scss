@@ -86,4 +86,39 @@
 		gap: 0.5rem;
 		font-size: 1.4rem;
 	}
+	&__iframe {
+		width: 650px;
+		height: 500px;
+	}
+}
+
+@media (max-width: $smallerst-dekstop) {
+	.contact {
+		&__iframe {
+			width: 500px;
+			height: 400px;
+		}
+	}
+}
+
+@media (max-width: $large-tablet) {
+	.contact {
+		&__iframe {
+			width: 400px;
+			height: 300px;
+		}
+	}
+}
+
+@media (max-width: $tablet) {
+	.contact {
+		&__box {
+			grid-template-columns: 1fr;
+			row-gap: 6rem;
+		}
+		&__iframe {
+			width: 550px;
+			height: 450px;
+		}
+	}
 }

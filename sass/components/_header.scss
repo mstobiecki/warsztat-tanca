@@ -45,7 +45,6 @@
 	}
 }
 
-// 1400px
 @media (max-width: $smaller-dekstop) {
 	.header {
 		&__heading {
@@ -61,6 +60,17 @@
 		&__text {
 			width: 35%;
 			text-align: left;
+		}
+	}
+}
+
+@media (max-width: $smallerst-dekstop) {
+	.header {
+		&__heading {
+			font-size: 3.8rem;
+		}
+		&__text {
+			width: 55%;
 		}
 	}
 }
