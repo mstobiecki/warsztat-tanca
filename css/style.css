@@ -168,3 +168,80 @@ body {
     line-height: 1.9;
     text-transform: uppercase;
     color: #ffe685; }
+
+.contact__box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 6rem; }
+
+.contact__map {
+  align-self: center; }
+
+.contact__heading {
+  font-size: 3rem; }
+
+.contact__address {
+  margin-top: 2rem;
+  font-style: normal;
+  font-size: 1.8rem; }
+
+.contact__phone, .contact__mail {
+  display: block;
+  text-decoration: none;
+  color: inherit; }
+
+.contact__info {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; }
+
+.contact__form {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; }
+
+.contact__name, .contact__email, .contact__tel, .contact__message {
+  padding: 1.2rem 2.4rem;
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid #cccccc;
+  color: #fff;
+  font-family: 'Syne', sans-serif;
+  font-weight: 700;
+  font-size: 1.6rem; }
+
+.contact__message {
+  resize: vertical;
+  min-height: 15rem; }
+
+.contact__name::placeholder, .contact__email::placeholder, .contact__tel::placeholder, .contact__message::placeholder, .contact__message::placeholder {
+  text-transform: uppercase; }
+
+.contact__button {
+  margin-top: 1rem;
+  align-self: start;
+  background-color: #fff3cd;
+  color: #171717;
+  border: none;
+  padding: 1.5rem 3rem;
+  font-family: inherit;
+  font-size: 1.6rem;
+  cursor: pointer;
+  transition: background-color 0.3s; }
+
+.contact__button:hover {
+  background-color: #e6dbb9; }
+
+.contact__checkboxs {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; }
+
+.contact__approvals {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.4rem; }
