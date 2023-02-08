@@ -148,6 +148,13 @@ body {
 .nav-open .icon-mobile-nav[name='menu-outline'] {
   display: none; }
 
+@media (max-width: 56.25em) {
+  .header {
+    gap: 10rem; }
+  .navigation__icon {
+    width: 4rem;
+    height: 4rem; } }
+
 .hero {
   position: relative;
   background-image: linear-gradient(rgba(33, 33, 33, 0.3), rgba(33, 33, 33, 0.3)), url("./../img/hero.webp");

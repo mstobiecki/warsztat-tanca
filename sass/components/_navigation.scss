@@ -139,3 +139,15 @@
 .nav-open .icon-mobile-nav[name='menu-outline'] {
 	display: none;
 }
+
+@media (max-width: $tablet) {
+	.header {
+		gap: 10rem;
+	}
+	.navigation {
+		&__icon {
+			width: 4rem;
+			height: 4rem;
+		}
+	}
+}
