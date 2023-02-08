@@ -1,4 +1,4 @@
-.header {
+.hero {
 	position: relative;
 	background-image: linear-gradient(
 			rgba(33, 33, 33, 0.3),
@@ -46,7 +46,7 @@
 }
 
 @media (max-width: $smaller-dekstop) {
-	.header {
+	.hero {
 		&__heading {
 			font-size: 4.8rem;
 		}
@@ -65,7 +65,7 @@
 }
 
 @media (max-width: $smallerst-dekstop) {
-	.header {
+	.hero {
 		&__heading {
 			font-size: 3.8rem;
 		}

@@ -1,6 +1,6 @@
 const yearEl = document.querySelector('.footer--js');
 const navigationButton = document.querySelector('.navigation__button');
-const navigation = document.querySelector('.navigation__container');
+const headerNavigation = document.querySelector('.header');
 
 const year = () => {
 	const currentYear = new Date().getFullYear();
@@ -8,7 +8,7 @@ const year = () => {
 };
 
 const mobileNavigation = () => {
-	navigation.classList.toggle('navigation--js');
+	headerNavigation.classList.toggle('navigation--js');
 };
 
 navigationButton.addEventListener('click', mobileNavigation);
