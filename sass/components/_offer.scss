@@ -89,3 +89,21 @@
 		}
 	}
 }
+
+@media (max-width: $phone) {
+	.offer {
+		&__container {
+			grid-template-columns: 1fr;
+		}
+		&__gallery {
+			width: 100%;
+			height: 100%;
+			justify-items: stretch;
+			opacity: 0.5;
+			mix-blend-mode: exclusion;
+		}
+		&__image {
+			width: 50%;
+		}
+	}
+}

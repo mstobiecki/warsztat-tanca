@@ -244,6 +244,18 @@ body {
   .offer__image {
     width: 50%; } }
 
+@media (max-width: 25em) {
+  .offer__container {
+    grid-template-columns: 1fr; }
+  .offer__gallery {
+    width: 100%;
+    height: 100%;
+    justify-items: stretch;
+    opacity: 0.5;
+    mix-blend-mode: exclusion; }
+  .offer__image {
+    width: 50%; } }
+
 .about-us {
   position: relative;
   background-image: url("../img/about-us.webp");
@@ -267,6 +279,12 @@ body {
     font-size: 2.6rem;
     width: 25%;
     bottom: 30%; } }
+
+@media (max-width: 25em) {
+  .about-us__heading {
+    font-size: 2.1rem;
+    width: 20%;
+    bottom: 40%; } }
 
 .testimonials {
   background-color: #323232; }
@@ -298,6 +316,12 @@ body {
 @media (max-width: 56.25em) {
   .testimonials__image {
     width: 80%; } }
+
+@media (max-width: 25em) {
+  .testimonials__text {
+    font-size: 2.1rem; }
+  .testimonials__name {
+    font-size: 1.4rem; } }
 
 .contact__box {
   display: grid;

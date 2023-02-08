@@ -27,3 +27,13 @@
 		}
 	}
 }
+
+@media (max-width: $phone) {
+	.about-us {
+		&__heading {
+			font-size: 2.1rem;
+			width: 20%;
+			bottom: 40%;
+		}
+	}
+}
