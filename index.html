@@ -118,11 +118,12 @@
                                     href="mailto:nazwa@warsztatytanca.com">nazwa@warsztatytanca.com</a>
                             </div>
                         </address>
-                        <form class="contact__form" action="#">
-                            <input class="contact__name" type="text" required placeholder="imię">
-                            <input class="contact__email" type="email" required placeholder="email">
-                            <input class="contact__tel" required type="tel" placeholder="telefon">
-                            <textarea required class="contact__message" placeholder="wiadomość"></textarea>
+                        <form class="contact__form" action="phpmail.php" method="POST">
+                            <input class="contact__name" name="name" type="text" required placeholder="imię">
+                            <input class="contact__email" name="email" type="email" required placeholder="email">
+                            <input class="contact__tel" name="tel" required type="tel" placeholder="telefon">
+                            <textarea required name="message" class="contact__message"
+                                placeholder="wiadomość"></textarea>
                             <div class="contact__checkboxs">
                                 <div class="contact__approvals">
                                     <input class="contact__checkbox" required type="checkbox"

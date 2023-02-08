@@ -1,2 +1,4 @@
 node_modules
 .vscode
+vendor
+phpmail-config.php
