@@ -4,6 +4,10 @@
 		display: flex;
 		justify-content: center;
 	}
+	&__image {
+		width: 50%;
+		height: 100%;
+	}
 	&__box {
 		margin-top: 4rem;
 		display: flex;

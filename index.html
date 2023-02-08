@@ -32,7 +32,15 @@
             </ul>
         </nav>
         <div class="navigation__social-media">
-            <img src="./img/socials.svg" alt="Ikony przedstawiające social media">
+            <a class="navigation__icon-link" href="http://facebook.com">
+                <ion-icon class="navigation__icon" name="logo-instagram"></ion-icon>
+            </a>
+            <a class="navigation__icon-link" href="http://facebook.com">
+                <ion-icon class="navigation__icon" name="logo-facebook"></ion-icon>
+            </a>
+            <a class="navigation__icon-link" href="http://facebook.com">
+                <ion-icon class="navigation__icon" name="logo-linkedin"></ion-icon>
+            </a>
         </div>
         <button class="navigation__button">
             <ion-icon class="navigation__icon" name="menu-outline"></ion-icon>
@@ -111,17 +119,19 @@
                             </div>
                         </address>
                         <form class="contact__form" action="#">
-                            <input class="contact__name" type="text" placeholder="imię">
-                            <input class="contact__email" type="email" placeholder="email">
-                            <input class="contact__tel" type="tel" placeholder="telefon">
-                            <textarea class="contact__message" placeholder="wiadomość"></textarea>
+                            <input class="contact__name" type="text" required placeholder="imię">
+                            <input class="contact__email" type="email" required placeholder="email">
+                            <input class="contact__tel" required type="tel" placeholder="telefon">
+                            <textarea required class="contact__message" placeholder="wiadomość"></textarea>
                             <div class="contact__checkboxs">
                                 <div class="contact__approvals">
-                                    <input class="contact__checkbox" required type="checkbox">
+                                    <input class="contact__checkbox" required type="checkbox"
+                                        placeholder="Zgoda na zapoznanie się z polityką prywatności">
                                     <span>Zapoznałem się z polityką prywatności</span>
                                 </div>
                                 <div class="contact__approvals">
-                                    <input class="contact__checkbox" required type="checkbox">
+                                    <input class="contact__checkbox" required type="checkbox"
+                                        placeholder="Zgoda na przetwarzanie danych">
                                     <span>Zgadzam się na przetwarzanie moich danych osobowych</span>
                                 </div>
                             </div>
@@ -131,8 +141,8 @@
                     <div class="contact__map">
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2426.5715214146426!2d19.729761899999996!3d52.54118619999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471c70eea26653cd%3A0x61bbecb71b5024e5!2sAleja%20marsza%C5%82ka%20J%C3%B3zefa%20Pi%C5%82sudskiego%2035%2C%2009-402%20P%C5%82ock!5e0!3m2!1spl!2spl!4v1675770777424!5m2!1spl!2spl"
-                            class="contact__iframe" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            class="contact__iframe" title="Mapa dojazdu do firmy" style="border:0;" allowfullscreen=""
+                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
             </div>

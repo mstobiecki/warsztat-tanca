@@ -12,6 +12,8 @@
 		justify-items: center;
 	}
 	&__image {
+		width: 25%;
+		height: 25%;
 		grid-column: 1 / -1;
 		align-items: center;
 	}
