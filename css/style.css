@@ -16,6 +16,10 @@ body {
   background-color: #171717;
   overflow-x: hidden; }
 
+@media (max-width: 37.5em) {
+  html {
+    font-size: 50%; } }
+
 .container {
   max-width: 130rem;
   margin: 0 auto;
@@ -62,7 +66,8 @@ body {
 .navigation__button {
   border: none;
   background: none;
-  cursor: pointer; }
+  cursor: pointer;
+  display: none; }
 
 .navigation__icon {
   height: 4.8rem;
@@ -100,10 +105,10 @@ body {
     .navigation__social-media {
       display: none; }
     .navigation__button {
-      position: fixed;
       right: 0;
       margin-right: 0.5rem;
-      z-index: 200; }
+      z-index: 200;
+      display: block; }
     .navigation__icon {
       color: #333; }
     .navigation--js .navigation {
@@ -373,26 +378,31 @@ body {
   font-size: 1.4rem; }
 
 .contact__iframe {
-  width: 650px;
-  height: 500px; }
+  width: 65rem;
+  height: 50rem; }
 
 @media (max-width: 75em) {
   .contact__iframe {
-    width: 500px;
-    height: 400px; } }
+    width: 50rem;
+    height: 40rem; } }
 
 @media (max-width: 62.5em) {
   .contact__iframe {
-    width: 400px;
-    height: 300px; } }
+    width: 40rem;
+    height: 30rem; } }
 
 @media (max-width: 56.25em) {
   .contact__box {
     grid-template-columns: 1fr;
     row-gap: 6rem; }
   .contact__iframe {
-    width: 550px;
-    height: 450px; } }
+    width: 55rem;
+    height: 45rem; } }
+
+@media (max-width: 37.5em) {
+  .contact__iframe {
+    width: 35rem;
+    height: 25rem; } }
 
 .footer {
   padding-bottom: 4rem; }

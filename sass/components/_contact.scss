@@ -87,16 +87,16 @@
 		font-size: 1.4rem;
 	}
 	&__iframe {
-		width: 650px;
-		height: 500px;
+		width: 65rem;
+		height: 50rem;
 	}
 }
 
 @media (max-width: $smallerst-dekstop) {
 	.contact {
 		&__iframe {
-			width: 500px;
-			height: 400px;
+			width: 50rem;
+			height: 40rem;
 		}
 	}
 }
@@ -104,8 +104,8 @@
 @media (max-width: $large-tablet) {
 	.contact {
 		&__iframe {
-			width: 400px;
-			height: 300px;
+			width: 40rem;
+			height: 30rem;
 		}
 	}
 }
@@ -117,8 +117,17 @@
 			row-gap: 6rem;
 		}
 		&__iframe {
-			width: 550px;
-			height: 450px;
+			width: 55rem;
+			height: 45rem;
+		}
+	}
+}
+
+@media (max-width: $large-phone) {
+	.contact {
+		&__iframe {
+			width: 35rem;
+			height: 25rem;
 		}
 	}
 }
