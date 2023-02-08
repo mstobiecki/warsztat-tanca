@@ -11,12 +11,13 @@
         rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <title>Warsztat Tańca</title>
+    <script defer src="./js/index.js"></script>
 </head>
 
 <body>
     <nav class="navigation">
         <div class="navigation__container">
-            <img src="./img/logo.svg" alt="Logo warsztaty tańca">
+            <img class="navigation__logo" src="./img/logo.svg" alt="Logo warsztaty tańca">
             <ul class="navigation__list">
                 <li class="navigation__item"><a class="navigation__link" href="#">Home</a></li>
                 <li class="navigation__item"><a class="navigation__link" href="#">O nas</a></li>
@@ -26,7 +27,13 @@
             <div class="navigation__social-media">
                 <img src="./img/socials.svg" alt="Ikony przedstawiające social media">
             </div>
+
         </div>
+        <button class="navigation__button">
+            <ion-icon class="navigation__icon" name="menu-outline"></ion-icon>
+            <ion-icon class="navigation__icon" name="close-outline"></ion-icon>
+        </button>
+
     </nav>
     <header class="header">
         <div class="header__container">
@@ -72,8 +79,9 @@
         </section>
         <section class="testimonials section-padding">
             <div class="container">
-                <div class="testimonials__image">
-                    <img src="./img/testimonials.png" alt="Grafika przedstawiająca opinie o firmie">
+                <div class="testimonials__image-box">
+                    <img class="testimonials__image" src="./img/testimonials.png"
+                        alt="Grafika przedstawiająca opinie o firmie">
                 </div>
                 <blockquote class="testimonials__box">
                     <span class="testimonials__char">&quot;</span>
@@ -149,11 +157,12 @@
             </div>
         </div>
         <div class="footer__box container">
-            <p class="footer__copyright">&copy; 2023 Warsztat Tańca</p>
+            <p class="footer__copyright">&copy; <span class="footer--js">2022</span> Warsztat Tańca</p>
             <p class="footer__private">Polityka prywatności</p>
         </div>
-
     </footer>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>

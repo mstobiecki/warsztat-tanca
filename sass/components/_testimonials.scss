@@ -1,6 +1,6 @@
 .testimonials {
 	background-color: #323232;
-	&__image {
+	&__image-box {
 		display: flex;
 		justify-content: center;
 	}
@@ -28,5 +28,13 @@
 		line-height: 1.9;
 		text-transform: uppercase;
 		color: $color-yellow;
+	}
+}
+
+@media (max-width: $tablet) {
+	.testimonials {
+		&__image {
+			width: 80%;
+		}
 	}
 }
