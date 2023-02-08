@@ -2,6 +2,7 @@ const yearEl = document.querySelector('.footer--js');
 const navigationButton = document.querySelector('.navigation__button');
 const headerNavigation = document.querySelector('.header');
 const allLinks = document.querySelectorAll('a:link');
+const sectionHero = document.querySelector('.hero');
 
 const year = () => {
 	const currentYear = new Date().getFullYear();
@@ -36,9 +37,27 @@ const scrollBehavior = () => {
 	});
 };
 
+const stickyNavigation = () => {
+	const obs = new IntersectionObserver(
+		function (entries) {
+			const ent = entries[0];
+
+			if (!ent.isIntersecting) headerNavigation.classList.add('sticky');
+			if (ent.isIntersecting) headerNavigation.classList.remove('sticky');
+		},
+		{
+			root: null,
+			threshold: 0,
+			rootMargin: '-100px',
+		}
+	);
+	obs.observe(sectionHero);
+};
+
 const init = () => {
 	year();
 	scrollBehavior();
+	stickyNavigation();
 };
 init();
 
