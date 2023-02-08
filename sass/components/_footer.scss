@@ -7,6 +7,9 @@
 	.navigation__list--top {
 		align-items: start;
 	}
+	.navigation__link--footer {
+		color: $color-white;
+	}
 	&__info {
 		display: flex;
 		flex-direction: column;

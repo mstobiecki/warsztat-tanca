@@ -178,6 +178,12 @@ body {
   .hero__text {
     width: 55%; } }
 
+@media (max-width: 20em) {
+  .hero__heading {
+    font-size: 3.2rem; }
+  .hero__text {
+    width: 100%; } }
+
 .offer {
   padding: 9.6rem 0 0 0; }
   .offer__image-box {
@@ -428,6 +434,11 @@ body {
     width: 35rem;
     height: 25rem; } }
 
+@media (max-width: 20em) {
+  .contact__iframe {
+    width: 30rem;
+    height: 20rem; } }
+
 .footer {
   padding-bottom: 4rem; }
   .footer__content {
@@ -435,6 +446,8 @@ body {
     justify-content: space-between; }
   .footer .navigation__list--top {
     align-items: start; }
+  .footer .navigation__link--footer {
+    color: #fff; }
   .footer__info {
     display: flex;
     flex-direction: column;
